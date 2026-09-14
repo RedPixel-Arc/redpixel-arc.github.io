@@ -6,12 +6,12 @@
 <title>RedPixel — Architecture Visualization</title>
 <style>
   :root{
-    --ink:#1c1a17;
-    --stone:#6b6459;
-    --paper:#efece4;
-    --paper-2:#e4ded2;
-    --line:#c9c1b0;
-    --clay:#9c5b3c;
+    --ink:#1a1414;
+    --stone:#6f6262;
+    --paper:#ffffff;
+    --paper-2:#f7eded;
+    --line:#e8d6d6;
+    --clay:#c1121f;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
@@ -27,6 +27,7 @@
   header{
     padding:32px 0 24px;
     border-bottom:1px solid var(--line);
+    border-top:5px solid var(--clay);
   }
   header .wrap{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;}
   .brand{font-size:22px;letter-spacing:0.3px;font-weight:normal;}
@@ -58,14 +59,14 @@
     display:inline-block;
     margin-top:34px;
     padding:14px 28px;
-    background:var(--ink);
-    color:var(--paper);
+    background:var(--clay);
+    color:#fff;
     text-decoration:none;
     font-family:'Helvetica Neue', Arial, sans-serif;
     font-size:14px;
     letter-spacing:0.3px;
   }
-  .hero .cta:hover{background:var(--clay);}
+  .hero .cta:hover{background:#8f0d17;}
 
   /* Section headings */
   h2{
@@ -126,7 +127,7 @@
     letter-spacing:0.3px;
     cursor:pointer;
   }
-  button[type=submit]:hover{background:#82492f;}
+  button[type=submit]:hover{background:#8f0d17;}
 
   footer{padding:36px 0;text-align:center;}
   footer p{
@@ -152,7 +153,7 @@
 <section class="hero">
   <div class="wrap">
     <h1>Architectural visuals that help clients see the building before it's built.</h1>
-    <p>We create 3D renders, walkthroughs, and concept visualizations for architects, builders, and homeowners — turning drawings into images people can actually picture themselves in.</p>
+    <p>I create 3D renders, walkthroughs, and concept visualizations for architects, builders, and homeowners — turning drawings into images people can actually picture themselves in.</p>
     <a class="cta" href="#contact">Request a render</a>
   </div>
 </section>
@@ -185,11 +186,11 @@
   <div class="wrap about">
     <div>
       <h2>About</h2>
-      <p>We work with architects and homeowners to produce clear, believable visualizations of a space before it's built — exterior renders, interior walkthroughs, and concept studies.</p>
+      <p>I work with architects and homeowners to produce clear, believable visualizations of a space before it's built — exterior renders, interior walkthroughs, and concept studies.</p>
       <p>Every project starts with your drawings or ideas, and ends with images you can use to plan, present, or sell the space.</p>
     </div>
     <div>
-      <label>What We offer</label>
+      <label>What I offer</label>
       <p style="color:var(--ink);">Exterior renders, interior renders, walkthrough animations, concept sketches, revisions on request.</p>
     </div>
   </div>
@@ -209,7 +210,7 @@
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="project">Tell us about your project</label>
+      <label for="project">Tell me about your project</label>
       <textarea id="project" name="project" placeholder="Type of space, size, deadline, budget..." required></textarea>
 
       <button type="submit">Send request</button>
